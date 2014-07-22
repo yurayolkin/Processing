@@ -20,3 +20,30 @@
 *.out
 *.app
 ProcessingTrafic/ProcessingTrafic.opensdf
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+ProcessingTrafic/ipch/processingtrafic.tests-844998b2/processingtraffic.ipch
