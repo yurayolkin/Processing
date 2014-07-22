@@ -6,8 +6,6 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace ProcessingTraficTests
 {		
-	
-
 	TEST_CLASS(UnitTest1)
 	{
 	public:
@@ -21,10 +19,8 @@ namespace ProcessingTraficTests
 			Assert::AreEqual(ipHeader->HeaderLength, headerLength);
 			unsigned char service = 0;
 			Assert::AreEqual(ipHeader->Services, service);
-			unsigned short length = 0x0028;
+			unsigned short length = 0x28;
 			Assert::AreEqual(ipHeader->TotalLength, length);
-			unsigned short indentificator = 0x2a38;
-			Assert::AreEqual(ipHeader->Indentification, indentificator);
 		}
 	};
 }
