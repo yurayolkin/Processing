@@ -12,7 +12,7 @@ public:
 		unsigned char IpVersion : 4;
 		unsigned char Services;
 		unsigned short TotalLength;
-		unsigned short Indendification;
+		unsigned short Indentification;
 		unsigned short FragmentOffset;
 		unsigned char LifeTime;
 		unsigned char Protocol;
