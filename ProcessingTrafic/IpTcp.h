@@ -25,5 +25,16 @@ public:
 	{
 		return ((unsigned short)((data)) << 8 | (unsigned short)((data >> 8)));
 	};
+
+	static unsigned int IpTcp::Razvorot24(unsigned int data)
+	{
+		return ((unsigned int)((unsigned char)(data)) << 16 | (unsigned int)((unsigned char)(data >> 8)) << 8 | (unsigned int)((unsigned char)(data >> 16)));
+	};
+
+	static unsigned int	IpTcp::Razvorot32(unsigned int data)
+	{
+		return ((unsigned int)((unsigned char)(data)) << 24 | (unsigned int)((unsigned char)(data >> 8)) << 16 | (unsigned int)((unsigned char)(data >> 16)) << 8 | (unsigned int)((unsigned char)(data >> 24)));
+	};
+
 };
 
