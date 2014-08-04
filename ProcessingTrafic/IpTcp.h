@@ -20,5 +20,10 @@ public:
 		unsigned int Source;
 		unsigned int Destination;
 	};
+
+	static unsigned short IpTcp::Razvorot16(unsigned short data)
+	{
+		return ((unsigned short)((data)) << 8 | (unsigned short)((data >> 8)));
+	};
 };
 

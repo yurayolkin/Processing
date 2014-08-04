@@ -19,8 +19,8 @@ namespace ProcessingTraficTests
 			Assert::AreEqual(ipHeader->HeaderLength, headerLength);
 			unsigned char service = 0;
 			Assert::AreEqual(ipHeader->Services, service);
-			unsigned short length = 0x28;
-			Assert::AreEqual(ipHeader->TotalLength, length);
+			unsigned short length = 0x0028;
+			Assert::AreEqual(IpTcp::Razvorot16(ipHeader->TotalLength), length);
 		}
 	};
 }
